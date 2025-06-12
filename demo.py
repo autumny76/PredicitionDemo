@@ -8,13 +8,11 @@ X = [[181, 80, 44], [177, 70, 43], [160, 60, 38], [154, 54, 37], [166, 65, 40],
 Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
      'female', 'male', 'male']
 
-# CHALLENGE - ...and train them on our data
+# used tree import/it works!!
 clf = tree.DecisionTreeClassifier()
 
 clf = clf.fit(X,Y)
 
 prediction = clf.predict([[159,60,37]])
-
-# CHALLENGE compare their reusults and print the best one!
 
 print(prediction)
